@@ -1,5 +1,5 @@
 # application
-*.exe filter=lfs diff=lfs merge=lfs -text
+# *.exe filter=lfs diff=lfs merge=lfs -text
 *.msi filter=lfs diff=lfs merge=lfs -text
 *.apk filter=lfs diff=lfs merge=lfs -text
 *.deb filter=lfs diff=lfs merge=lfs -text
@@ -32,4 +32,6 @@
 # design file
 *.uml filter=lfs diff=lfs merge=lfs -text
 *.eap[x] filter=lfs diff=lfs merge=lfs -text
+eletron/hello-electron-win32-x64/hello-electron[[:space:]]0.2.0.exe filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
 *.asar filter=lfs diff=lfs merge=lfs -text
