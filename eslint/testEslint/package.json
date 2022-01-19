@@ -1,0 +1,19 @@
+{
+  "name": "test-eslint",
+  "version": "1.0.0",
+  "description": "test eslint",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:create": "eslint --init",
+    "lint:fix": "eslint --fix",
+    "test": "test"
+  },
+  "author": "cade",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-plugin-vue": "^7.5.0"
+  }
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  nginx: 
+    image: nginx:stable-alpine
+    ports: 
+      - 8088:80
+    volumes:
+      - ./workdir/conf/default.conf:/etc/nginx/conf.d/default.conf
+      # - ./workdir/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./workdir/wwwroot:/usr/share/nginx/wwwroot
+      - ./workdir/log:/var/log/nginx
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.role == manager

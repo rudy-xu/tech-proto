@@ -1,0 +1,22 @@
+{
+  "name": "testeslintts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:create": "eslint --init",
+    "lint": "eslint --ext .vue, --ext .ts src/",
+    "lint:fix": "eslint ./src --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cade",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-vue": "^7.5.0",
+    "typescript": "^4.1.3"
+  }
+}

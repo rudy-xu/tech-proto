@@ -1,0 +1,184 @@
+.iot-header {
+  margin-bottom: 22px;
+}
+
+.isIot {
+    --side-width: 45px;
+}
+
+.iot-title {
+    font-size: 30px;
+    color: #446182;
+    height: 101px;
+}
+
+ion-title {
+  font-size: 50;
+  color: rgb(51, 118, 243);
+}
+
+.lable-title {
+  font-size: 25px;
+  color: #334e53;
+  margin-left: 48px;
+}
+
+.label-map {
+  font-size: 18px;
+  color: #549dc1;
+  margin-left: 48px;
+}
+
+.label-mapSL {
+  font-size: 18px;
+  color: #426369;
+}
+
+.label-SL {
+  float: left;
+  font-size: 18px;
+  color: #3a585d;
+  margin-left: 48px;
+}
+
+.iot-time {
+  float: right;
+  font-size: 20px;
+  color: #517377;
+  margin-right: 2%;
+}
+
+.iot-splitLine-top {
+  background-color: #74898d;
+  padding-top: 2px;
+  height: 1px;
+  width: 95%;
+  margin-bottom: 5px;
+  margin-left: 48px;
+}
+
+.dashboard-grid {
+  display: flex;
+  margin-left: 7%;
+  /* margin-right: 3%; */
+  /* flex-direction: column; */
+  /* background-color: blue; */
+}
+
+.sensor-card {
+  width: 190px;
+  height: 113px;
+  border-radius: 6px;
+  margin-right: 10%;
+  margin-left: 1%;
+}
+
+.sensor-normal {
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.55;
+  padding-top: 15%;
+  text-align: center;
+  color: #05a351;
+}
+
+.sensor-warning {
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.55;
+  padding-top: 15%;
+  text-align: center;
+  color: #f59a23;
+}
+
+.sensor-error {
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.55;
+  padding-top: 15%;
+  text-align: center;
+  color: #e25c5c;
+}
+
+
+.unit-normal {
+  font-size: 20px;
+  color: #05a351;
+}
+
+.unit-warning {
+  font-size: 20px;
+  color: #f59a23;
+}
+
+.unit-error {
+  font-size: 20px;
+  color: #e25c5c;
+}
+
+.sensor-des {
+  font-family: Arial;
+  font-size: 17px;
+  text-align: center;
+  color: #546371;
+}
+
+.row-card {
+  margin-top: 1%;
+}
+
+.tbHead {
+  width: 50%;
+}
+
+.myCol {
+  /* background-color: brown; */
+  width: 30%;
+  text-align: center;
+}
+
+.statusOn {
+  width:15px; 
+  height:15px; 
+  border-radius:50%; 
+  background-color:green; 
+  display: block;
+  margin-left: 50%;
+}
+
+.statusOff{
+  width:15px; 
+  height:15px; 
+  border-radius:50%; 
+  background-color:red; 
+  display: block;
+  margin-left: 50%;
+}
+.msgCol {
+  max-width: 7%;
+}
+
+.timeCol {
+  max-width: 6%;
+  width: 1px;
+}
+
+.msgItem {
+  font-size: 85%;
+}
+
+.statusItem {
+  font-size: 85%;
+}
+
+.deviceCol {
+  margin-right: 35px;
+  width: 80px;
+}
+
+.statusTime {
+  margin-left: 50px;
+}

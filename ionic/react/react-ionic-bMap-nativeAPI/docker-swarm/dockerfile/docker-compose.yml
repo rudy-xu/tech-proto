@@ -1,0 +1,16 @@
+#react-Nginx
+version: '3.8'
+services: 
+    react:
+        image: loc-ionic
+        ports:
+            - "8080:80"
+        volumes:
+            #readonly mount file from host os
+            - ./config/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+        deploy:
+            # exactly one container per swarm node
+            mode: global
+            placement:
+                constraints:
+                    - node.role == manager

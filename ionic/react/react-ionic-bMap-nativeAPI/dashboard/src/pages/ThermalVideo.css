@@ -1,0 +1,112 @@
+.ionHerader {
+    margin-bottom: 22px;
+}
+
+.thermalTitle {
+    font-size: 30px;
+    color: #446182;
+    height: 101px;
+}
+
+.lableVideoAna {
+    font-size: 25px;
+    color: #426369;
+    margin-left: 48px;
+}
+
+.lableVideoCam{
+    float: left;
+    font-size: 20px;
+    color: #426369;
+    margin-left: 48px;
+}
+
+.ionChip {
+    background-color: #fd7620;
+    color: #ffffff;
+}
+
+.thermalTime {
+    float: right;
+    font-size: 20px;
+    color: #517377;
+    margin-right: 2%;
+}
+
+.splitLine {
+    background-color: #74898d;
+    padding-top: 2px;
+    height: 1px;
+    width: 95%;
+    margin-bottom: -30px;
+    margin-left: 48px;
+}
+
+.video-col {
+    margin-left: 3%;
+    max-width: 380px;
+    /* background-color: #fd7620; */
+}
+
+.srcVideo-col {
+    max-width: 520px;
+}
+
+.anaVideo-col {
+    max-width: 520px;
+    /* background-color: #fd7620; */
+}
+
+.video-button {
+    padding-left: 1%;
+}
+
+.video-list {
+    width: 340px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.norVideo-card {
+    width: 500px;
+    border-radius: 6px;
+    background-color:#446182;
+}
+
+.anaVideo-card {
+    width: 500px;
+    border-radius: 6px;
+    background-color:#446182;
+}
+
+.src-Video {
+    width: 493px;
+    height: 380px;
+    margin-left: 3px;
+}
+
+.face-video{ 
+    width: 493px;
+    height: 380px;
+    margin-left: 3px;
+}
+
+.src-video-label {
+    font-size: 24px;
+    color: #000000;
+    padding-left: 35%;
+}
+
+.face-video-label {
+    font-size: 24px;
+    color: #000000;
+    padding-left: 35%;
+}
+
+.ionText {
+    text-align: center;
+}
+
+.textStyle {
+    font-size: 150%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cade and the JDI</title>
+        <link rel="stylesheet" media="screen" href="style/basic.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="Cade and the JDI" />
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="here">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="photos.html">Photo</a></li>
+                    <li><a href="live.html">Live</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <artilce>
+        </artilce>
+
+        <!-- <script type="text/javascript" src="scripts/global.js"></script> -->
+
+
+        <!-- Test code -->
+        <div class="test" draggable="true">test dragging</div>
+
+        <script type="text/javascript">
+        
+            function test3() {
+                for( let i=0; i<900000000; ++i) 
+                {
+                    let a = 1+i;
+                };
+                console.log('end')
+            }
+            async function test() {
+                await test3();
+            }
+
+            function test2() {
+                test();
+                console.log("+++++++")
+            }
+
+            async function f() {
+
+                let promise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("done!"), 3000)
+                });
+
+                // let result = promise; // 等待，直到 promise resolve (*)
+
+                await promise.then((res) => {
+                    console.log(res)
+                });
+                // alert(result); // "done!"
+                console.log("----------")
+
+                setTimeout(() => {
+                    console.log("+++++++++")
+                }, 1000);
+            }
+
+            window.onload = f;
+
+            document.addEventListener('drag', function(event) {
+                event.preventDefault()
+                event.dataTransfer.dropEffect = 'move'
+            },false);
+            document.addEventListener("dragover", function(event) {
+                // prevent default to allow drop
+                event.preventDefault();
+                event.dataTransfer.dropEffect = 'copy'
+            }, false);
+        </script>
+    </body>
+</html>

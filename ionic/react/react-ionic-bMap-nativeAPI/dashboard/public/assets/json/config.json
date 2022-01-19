@@ -1,0 +1,11 @@
+{
+    "basicUrl": "http://10.86.5.205:5000",
+    "path": {
+        "register": "",
+        "authenticate": "/api/users/authenticate",
+        "status": "",
+        "message": "/api/DeviceMessage/top/1?device=plc-2"
+    },
+    "videoUrl": "http://10.86.5.205:5270/objects",
+    "token": ""
+}

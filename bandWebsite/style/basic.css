@@ -1,0 +1,11 @@
+@import url(layout.css);
+@import url(color.css);
+@import url(typography.css);
+
+.test {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+}

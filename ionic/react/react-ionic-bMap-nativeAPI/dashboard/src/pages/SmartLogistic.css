@@ -1,0 +1,21 @@
+.smartTitle {
+    font-size: 30px;
+    color: #446182;
+    height: 101px;
+}
+
+.mapStyle{
+    margin-top:10px;
+    margin-left: 10px;
+    width: 98%;
+    height: 98%;  
+}
+
+/* img{
+    max-width: inherit;
+} */
+
+/* #allMap{
+    width: 500px;
+    height: 600px;
+} */
