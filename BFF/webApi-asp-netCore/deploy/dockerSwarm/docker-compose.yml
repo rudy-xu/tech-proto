@@ -1,0 +1,18 @@
+# mysql
+version: "3.8"
+services:
+  mySql:
+    image: new-mysql:latest
+    ports:
+      - "13306:3306"
+    volumes:
+      - ./workdir/data:/var/lib/mysql:rw
+      # config
+      - ./config/conf:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.role == manager

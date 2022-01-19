@@ -1,0 +1,30 @@
+# Use root/example as user/password credentials
+version: '3.8'
+services:
+  mySql:
+    image: loc-mysql:latest
+    # container_name: mysql
+    ports:
+      - "13306:3306"  
+    # command: --default-authentication-plugin=mysql_native_password
+    # restart: always
+    volumes: 
+      # read-write, allow application write files into host os
+      # data
+      - ./workdir/data:/var/lib/mysql:rw
+      # config
+      - ./config/conf:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    deploy:
+      # exactly one container per swarm node
+      mode: global
+      placement:
+        constraints: 
+          - node.role == manager
+
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8080:8080
